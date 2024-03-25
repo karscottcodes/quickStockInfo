@@ -1,0 +1,21 @@
+{
+  "name": "http_apis",
+  "version": "1.0.0",
+  "description": "Consuming News and Stock Information APIs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon ./index.js"
+  },
+  "author": "KARScott|codes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "dotenv": "^16.4.5",
+    "esm": "^3.2.25",
+    "express": "^4.19.1",
+    "node-fetch": "^3.3.2",
+    "nodemon": "^3.1.0",
+    "pug": "^3.0.2"
+  }
+}

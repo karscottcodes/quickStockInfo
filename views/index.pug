@@ -1,0 +1,21 @@
+extends common/layout
+
+block layout-content
+    div.container
+        .row
+            .col 
+                div.mb-3
+                    form(id="newsForm", action="/getNews", method="post")
+                        label(for="symbol", class="form-label")
+                            h2.mt-3 Enter Stock Symbol:
+                        input(class="form-control", type="text", id="symbol", name="symbol", placeholder="TSLA", required)
+                        button(class="mt-3 btn btn-primary", type="submit") Submit
+        .row.pt-3
+            .col-sm-6
+                h3 Recent News
+                div#newsResults
+            .col-sm-6
+                h3 Stock Info
+                div#stockInfo &nbsp;
+                div#chartRender
+                    canvas#stockChart
