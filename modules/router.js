@@ -5,6 +5,4 @@ pageRouter.get("/", async (request, response) => {
     response.render("index", {title: "Home"});
 });
 
-
-
 module.exports = pageRouter;
