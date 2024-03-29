@@ -9,7 +9,7 @@ const axios = require("axios");
 const pageRouter = require("./modules/router");
 
 const app = express();
-const port = process.env.PORT || "8888";
+const port = process.env.PORT || 3030;
 
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
@@ -21,7 +21,7 @@ app.use(express.json());
 app.use ("/", pageRouter);
 
 app.listen(port, () => {
-    console.log( `Listening on http://localhost:${port}`);
+    console.log( `Listening on ${port}`);
 });
 
 app.post("/getNews", (request, response) => {
