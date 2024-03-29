@@ -1,10 +1,10 @@
 const express = require("express");
 const path = require("path");
 const axios = require("axios");
-const Chart = require("chart.js");
+// const Chart = require("chart.js");
 
-const dotenv = require("dotenv");
-dotenv.config();
+// const dotenv = require("dotenv");
+// dotenv.config();
 
 const pageRouter = require("./modules/router");
 
@@ -53,7 +53,6 @@ app.post("/getStockInfo", (request, response) => {
 
     const apiUrl = "https://www.alphavantage.co/query?function=";
     const timeSeries = "TIME_SERIES_MONTHLY";
-    // const apiToken = "8N7KK54TVWK9PS87";
     const apiToken = "0HG79JYA3HRUVGRD";
 
     const requestUrl = `${apiUrl}${timeSeries}&symbol=${symbol}&apikey=${apiToken}`;
